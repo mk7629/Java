@@ -1,0 +1,33 @@
+//Transpose Array
+package platform.java.slackExercise;
+
+public class Java190321 {
+	public static void main(String[] args) {
+
+		transposeArr();
+
+	}
+
+	public static void transposeArr() {
+		int r = 3;
+		int c = 3;
+		int[][] arr = new int[r][c];
+		arr = new int[][] { { 3, 0, 7 }, 
+							          { 5, 4, 3 }, 
+							          { 0, 8, 6 } };
+
+
+		int[][] switchArr = new int[r][c];
+		System.out.println("Transpose arr is: " );
+		for(int i = 0; i <3; i++) {
+			for (int j = 0; j < 3; j++) {
+
+				switchArr[i][j] = arr[j][i];
+				System.out.println(switchArr[i][j]);
+			}
+			
+		}
+
+	}
+
+}
